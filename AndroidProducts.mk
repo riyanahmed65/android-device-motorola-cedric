@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The arrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cedric.mk
+    $(LOCAL_DIR)/arrow_cedric.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cedric-user \
-    lineage_cedric-userdebug \
-    lineage_cedric-eng
+    arrow_cedric-user \
+    arrow_cedric-userdebug \
+    arrow_cedric-eng
