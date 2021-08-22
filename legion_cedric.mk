@@ -14,6 +14,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit some common LegionOS stuff.
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
+# LegionOS Props
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# LegionOS Device Maintainers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=MdRiyan
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := legion_cedric
 PRODUCT_DEVICE := cedric
