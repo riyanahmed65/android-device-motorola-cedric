@@ -1,20 +1,21 @@
 #
-# Copyright (C) 2019 The arrowOS Project
+# Copyright (C) 2021 The LegionOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from cedric device
 $(call inherit-product, device/motorola/cedric/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common LegionOS stuff.
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_cedric
+PRODUCT_NAME := legion_cedric
 PRODUCT_DEVICE := cedric
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G (5)
