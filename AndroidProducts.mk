@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The arrowOS Project
+# Copyright (C) 2019 The legionOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cedric.mk
+    $(LOCAL_DIR)/legion_cedric.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cedric-user \
-    arrow_cedric-userdebug \
-    arrow_cedric-eng
+    legion_cedric-user \
+    legion_cedric-userdebug \
+    legion_cedric-eng
